@@ -77,6 +77,9 @@
             //Console.WriteLine(numbers.Rank);   //dimention  
             #endregion
 
+
+            #region two D array
+
             //two D array
 
             //int[,] marks = new int[3, 3];
@@ -108,9 +111,17 @@
             //    for (int j = 0; j < 3; j++)
             //    {
             //        Console.Write($"{marks[i,j]}");
-                 
+
             //    }
-            //}
+            //} 
+            #endregion
+
+            //int[][] marks = new int[3][];
+
+            //marks[0] = new int[]{ 1,2,3};
+            //marks[1] = new int[] { 1, 2};
+            //marks[2] = new int[] { 1, 2, 3 ,4};
+
 
 
 
