@@ -4,6 +4,7 @@
     {
         static void Main(string[] args)
         {
+            #region one D array
 
             int[] numbers;
             //declare for refrence (pointers) from type 'array of integers '
@@ -73,7 +74,44 @@
             ////one D array
 
             //Console.WriteLine(numbers.Length); //size
-            //Console.WriteLine(numbers.Rank);   //dimention 
+            //Console.WriteLine(numbers.Rank);   //dimention  
+            #endregion
+
+            //two D array
+
+            //int[,] marks = new int[3, 3];
+
+            //marks[0, 0] = 99;
+            //marks[0, 1] = 99;
+            //marks[0, 2] = 99;
+
+            //marks[1, 0] = 80;
+            //marks[1, 1] = 98;
+            //marks[1, 2] = 97;
+
+            //marks[2, 0] = 88;
+            //marks[2, 1] = 98;
+            //marks[2, 2] = 47;
+
+            //for(int i = 0;i<3;i++)
+            //{
+            //    for(int j = 0;j<3;j++)
+            //    {
+            //        Console.Write($"enter marks[{i},{j}] :");
+            //        marks[i, j] = int.Parse(Console.ReadLine());
+            //    }
+            //}
+
+
+            //for (int i = 0; i < 3; i++)
+            //{
+            //    for (int j = 0; j < 3; j++)
+            //    {
+            //        Console.Write($"{marks[i,j]}");
+                 
+            //    }
+            //}
+
 
 
         }
