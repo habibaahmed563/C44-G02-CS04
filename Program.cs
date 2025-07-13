@@ -46,11 +46,22 @@
         //}
 
 
-        static void swap( ref int x,ref int y)
+        //static void swap( ref int x,ref int y)
+        //{
+        //    int temp = x;
+        //    x = y;
+        //    y = temp;
+        //}
+
+        static int sumarray(int[]arr)
         {
-            int temp = x;
-            x = y;
-            y = temp;
+            int sum = 0;
+
+            for(int i=0;i<arr.Length;i++)
+            {
+                sum += arr[i];
+            }
+            return sum;
         }
         static void Main(string[] args)
         {
@@ -204,6 +215,7 @@
             #endregion
 
 
+            #region passing parameter value type
             //passing by value 
             //passing by reference 
 
@@ -228,18 +240,25 @@
 
 
 
-            int A = 4, B = 5;
+            //int A = 4, B = 5;
 
-            Console.WriteLine($"A: {A}"); // 4 
-            Console.WriteLine($"B: {B}"); // 5
+            //Console.WriteLine($"A: {A}"); // 4 
+            //Console.WriteLine($"B: {B}"); // 5
 
-            Console.WriteLine("-----after swap------");
-            swap( ref A,ref B); //passing by ref
+            //Console.WriteLine("-----after swap------");
+            //swap(ref A, ref B); //passing by ref
 
-            Console.WriteLine($"A: {A}");
-            Console.WriteLine($"B: {B}");
+            //Console.WriteLine($"A: {A}");
+            //Console.WriteLine($"B: {B}");
+            #endregion
 
 
+            //passing parameters reference type
+
+            //1. passing by value
+
+            //2. passing by refrence
+            int[] numbers = { 1, 2, 3 };
         }
     }
 }
