@@ -29,14 +29,14 @@
         //}
 
 
-        static void printshape(int count , string pattern)
-        {
-            //body
-            for (int i = 1; i <= count; i++)
-            {
-                Console.WriteLine("==");
-            }
-        }
+        //static void printshape(int count , string pattern)
+        //{
+        //    //body
+        //    for (int i = 1; i <= count; i++)
+        //    {
+        //        Console.WriteLine("==");
+        //    }
+        //}
 
         //static void swap(int x,int y)
         //{
@@ -66,17 +66,24 @@
         //    return sum;
         //}
 
-        static int sumarray( ref int[] arr)
+        //static int sumarray( ref int[] arr)
+        //{
+        //    int sum = 0;
+
+        //    arr[0] = 100;
+
+        //    for (int i = 0; i < arr.Length; i++)
+        //    {
+        //        sum += arr[i];
+        //    }
+        //    return sum;
+        //}
+
+
+        static int summul(int x, int y)
         {
-            int sum = 0;
-
-            arr[0] = 100;
-
-            for (int i = 0; i < arr.Length; i++)
-            {
-                sum += arr[i];
-            }
-            return sum;
+            return x + y;
+            return x * y;
         }
         static void Main(string[] args)
         {
@@ -267,6 +274,7 @@
             //Console.WriteLine($"B: {B}");
             #endregion
 
+            #region passing parameter refrence type
 
             //passing parameters reference type
 
@@ -283,14 +291,17 @@
 
             //2. passing by refrence
 
-            int[] Numbers = { 1, 2, 3 };
-            int result = sumarray( ref Numbers);//passing by ref
+            //int[] Numbers = { 1, 2, 3 };
+            //int result = sumarray(ref Numbers);//passing by ref
 
-            //the address of the numbers
+            ////the address of the numbers
 
-            Console.WriteLine(result);
-            Console.WriteLine(Numbers[0]);
+            //Console.WriteLine(result);
+            //Console.WriteLine(Numbers[0]);
+            #endregion
 
+            int a = 3, b = 6;
+            Console.WriteLine(summul(a,b));
         }
     }
 }
