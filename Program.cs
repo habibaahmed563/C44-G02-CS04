@@ -1,7 +1,42 @@
 ﻿namespace assignmentc_04
 {
+
+    //1. class     -> functions
+    //2. struct    -> fuctions
+    //3. interface -> functions 
+    //4. enum
+
     internal class Program
     {
+
+        // static void printshape()
+        //{
+        //    //body
+        //    for(int i = 1; i<=10;i++)
+        //    {
+        //        Console.WriteLine("==");
+        //    }
+        //}
+
+
+        //static void printshape(int count)
+        //{
+        //    //body
+        //    for (int i = 1; i <= count; i++)
+        //    {
+        //        Console.WriteLine("==");
+        //    }
+        //}
+
+
+        static void printshape(int count , string pattern)
+        {
+            //body
+            for (int i = 1; i <= count; i++)
+            {
+                Console.WriteLine("==");
+            }
+        }
         static void Main(string[] args)
         {
             #region one D array
@@ -114,7 +149,7 @@
 
             //    }
             //} 
-            #endregion
+
 
             //int[][] marks = new int[3][];
 
@@ -122,7 +157,32 @@
             //marks[1] = new int[] { 1, 2};
             //marks[2] = new int[] { 1, 2, 3 ,4};
 
+            #endregion
 
+
+            //functions : block of code that have name
+            //if u need to excute this code u need to call this function by the name 
+            //dry
+
+
+            //function prototype 
+            //1. signature
+            //1.1. name 
+            //1.2. return type
+            //1.3. parameters (inputs)
+
+
+            //2. body (code)
+
+            //calling for the functions
+
+            printshape(3 , "^.^");//passing by order
+            printshape(pattern: "==", count: 5); //passing by name 
+
+
+            //methods 
+            //1. class member method (static method)
+            //2. object member method (non static method)
 
 
         }
