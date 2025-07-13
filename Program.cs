@@ -53,11 +53,26 @@
         //    y = temp;
         //}
 
-        static int sumarray(int[]arr)
+        //static int sumarray(int[]arr)
+        //{
+        //    int sum = 0;
+
+        //    arr[0] = 100;
+
+        //    for(int i=0;i<arr.Length;i++)
+        //    {
+        //        sum += arr[i];
+        //    }
+        //    return sum;
+        //}
+
+        static int sumarray( ref int[] arr)
         {
             int sum = 0;
 
-            for(int i=0;i<arr.Length;i++)
+            arr[0] = 100;
+
+            for (int i = 0; i < arr.Length; i++)
             {
                 sum += arr[i];
             }
@@ -257,8 +272,25 @@
 
             //1. passing by value
 
+
+            //int[] numbers ={ 1, 2, 3 };
+            //int result = sumarray(numbers);
+            //Console.WriteLine(result);
+
+            //Console.WriteLine(result);
+            //Console.WriteLine(numbers[0]);
+
+
             //2. passing by refrence
-            int[] numbers = { 1, 2, 3 };
+
+            int[] Numbers = { 1, 2, 3 };
+            int result = sumarray( ref Numbers);//passing by ref
+
+            //the address of the numbers
+
+            Console.WriteLine(result);
+            Console.WriteLine(Numbers[0]);
+
         }
     }
 }
