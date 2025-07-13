@@ -37,6 +37,21 @@
                 Console.WriteLine("==");
             }
         }
+
+        //static void swap(int x,int y)
+        //{
+        //    int temp = x;
+        //    x = y;
+        //    y = temp;
+        //}
+
+
+        static void swap( ref int x,ref int y)
+        {
+            int temp = x;
+            x = y;
+            y = temp;
+        }
         static void Main(string[] args)
         {
             #region one D array
@@ -160,6 +175,9 @@
             #endregion
 
 
+            #region function prototype
+
+
             //functions : block of code that have name
             //if u need to excute this code u need to call this function by the name 
             //dry
@@ -176,13 +194,50 @@
 
             //calling for the functions
 
-            printshape(3 , "^.^");//passing by order
-            printshape(pattern: "==", count: 5); //passing by name 
+            //printshape(3, "^.^");//passing by order
+            //printshape(pattern: "==", count: 5); //passing by name 
 
 
             //methods 
             //1. class member method (static method)
-            //2. object member method (non static method)
+            //2. object member method (non static method) 
+            #endregion
+
+
+            //passing by value 
+            //passing by reference 
+
+            //passing parameters value type 
+
+            //1. passing by value 
+
+
+            //int A = 4, B = 5;
+
+            //Console.WriteLine($"A: {A}");
+            //Console.WriteLine($"B: {B}");
+
+            //Console.WriteLine("-----after swap------");
+            //swap(A, B); //passing by value
+
+            //Console.WriteLine($"A: {A}");
+            //Console.WriteLine($"B: {B}");
+
+
+            //2. passing by ref 
+
+
+
+            int A = 4, B = 5;
+
+            Console.WriteLine($"A: {A}"); // 4 
+            Console.WriteLine($"B: {B}"); // 5
+
+            Console.WriteLine("-----after swap------");
+            swap( ref A,ref B); //passing by ref
+
+            Console.WriteLine($"A: {A}");
+            Console.WriteLine($"B: {B}");
 
 
         }
