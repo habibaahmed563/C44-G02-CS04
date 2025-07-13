@@ -302,6 +302,8 @@
 
             int a = 3, b = 6;
             Console.WriteLine(summul(a,b));
+
+
         }
     }
 }
